@@ -1,0 +1,226 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    position: relative;
+}
+
+header .logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.wallet-balance-container {
+    display: flex;
+    align-items: center;
+    margin-top: -40px;
+    margin-right: 50px;
+    float: right;
+    
+
+}
+
+.wallet-logo {
+    height: 28px; /* Adjust the size of the logo as needed */
+}
+
+#wallet-balance-amount {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.hero button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #0056b3;
+}
+
+#features {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+#features h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    flex: 1;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature img {
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#transactions {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#transactions h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.transaction-filters {
+    margin-bottom: 20px;
+}
+
+.transaction-filters button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.transaction-filters button:hover {
+    background-color: #0056b3;
+}
+
+#transaction-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.transaction-item {
+    background-color: white;
+    padding: 20px;
+    margin: 10px 0;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.transaction-item h3 {
+    margin: 0 0 10px 0;
+}
+
+.transaction-item p {
+    margin: 5px 0;
+}
+
+#how-it-works {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#how-it-works h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.step {
+    flex: 1;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#testimonials {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+#testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    margin: 20px;
+}
+
+#cta {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#cta h2 {
+    font-size: 2

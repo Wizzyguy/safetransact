@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeTransact - Transactions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="SafeTransact Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="transactions.html">Transactions</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#dashboard">User Dashboard</a></li>
+            </ul>
+        </nav>
+        <div class="wallet-balance-container">
+            <img src="wallet-logo.png" alt="Wallet Logo" class="wallet-logo">
+            <p id="wallet-balance-amount">₦0.00</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="wallet-funding">
+            <h2>Fund Wallet</h2>
+            <form id="fund-wallet-form" onsubmit="fundWallet(event)">
+                <label for="fund-amount">Amount (₦):</label>
+                <input type="number" id="fund-amount" name="fund-amount" min="0" step="100" required>
+                <button type="submit">Fund Wallet</button>
+            </form>
+        </section>
+        
+        <section id="transactions">
+            <h2>Transactions</h2>
+            <div class="transaction-filters">
+                <button onclick="showTransactions('all')">All Transactions</button>
+                <button onclick="showTransactions('open')">Open Transactions</button>
+                <button onclick="showTransactions('closed')">Closed Transactions</button>
+                <button onclick="showTransactions('action-required')">Action Required</button>
+            </div>
+            <div id="transaction-list">
+                <!-- Transaction items will be dynamically added here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SafeTransact. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
